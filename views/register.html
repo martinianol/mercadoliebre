@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Registro Usuario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href = "/css/normalize.css" rel = "stylesheet">
+    <link href = "/css/styles_register.css" rel = "stylesheet">
+</head>
+<body>
+    
+</body>
+<header>
+
+</header>
+<main>
+    <form action="/" method ="GET">
+
+      <div>
+        <label for ="name">Nombre y Apellido:</label>
+        <input type="text" name="name" id ="name">
+      </div>
+        
+      <div>
+        <label for ="user">Nombre de Usuario:</label>
+        <input type="text" name="user" id ="user">
+      </div>
+      
+
+        <label for ="date">Fecha de nacimiento: </label>
+        <input type="date" name="date" id="date">
+
+        <label for ="address">Domicilio: </label>
+        <input type="text" name="address" id="address">
+
+        <label for ="profile">Perfil del usuario: </label>
+        <input type="radio" name="profile" value ="buy">Comprador
+        <input type="radio" name="profile" value ="sell">Vendedor
+
+        <label for="categories">Categoría de interés</label>
+        <input type="checkbox" name="categories" value="electro">Electro
+        <input type="checkbox" name="categories" value="moda">Moda
+        <input type="checkbox" name="categories" value="hogar">Hogar
+        <input type="checkbox" name="categories" value="toys">Juguetería
+        <input type="checkbox" name="categories" value="healthlife">Vida sana
+
+        <label for="photo">Foto de usuario</label>
+        <input type="file" name="photo">
+
+        <label for="pwd">Password:</label>
+        <input type="password" name="pwd" id="pwd">
+
+        <label for="cpwd">Confrimar password:</label>
+        <input type="password" name="cpwd" id="cpwd">
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+        
+
+
+    </form>
+</main>
+</html>

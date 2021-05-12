@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+#logo {
+    width: 200px;
+}
+
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin:0;
+}
+
+#logo_search {
+    padding: 20px 0 0 10px;
+}
+
+
+input {
+    display: block;
+    margin: 5px 0px;
+    width: 180px;
+}
+
+#search {
+    background-color: white;
+    font-size: 12px;
+}
+.buscador {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+button {
+    width: 18px;
+    height: auto;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    font-size: 17px;
+    padding: 5px 0;
+}
+
+
+.burger-menu {
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 12px 0;
+    margin: 20px auto 0px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 8px;
+
+}
+
+.banner img {
+    max-width: 100%;
+    
+}
+
+main {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.precios, .descripciones {
+    font-size: 18px;
+}
+
+.precio-descuento {
+    display: flex;
+    align-items: baseline;
+    gap:10px;
+    
+}
+
+.precios {
+    width: 30%;
+}
+
+.descuentos {
+    flex-grow: 1;
+   
+}
+
+header h4{
+    text-align: center;
+}
+
+section {
+    margin-top: 20px;
+}
+
+article {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #FFF;
+}
+
+.product_info i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.product_info {
+    position: relative;
+}
+img {
+    width: 100%;
+}
+
+.product_info {
+    color: green;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    text-align: left;
+    background-color: white;
+}
+
+.precios {
+    color:#000;
+}
+.descripciones {
+    color: grey;
+    display: none;
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    padding: 0px 20% 10px 20%;
+    background-color: white;
+    width: 90%;
+    margin: 10px auto;
+    
+}
+
+footer i {
+    font-size: 2em;
+    color: #1259c3;
+    margin: 10px 0px;
+}
+
+footer p{
+    margin: 0px 0px 10px 0px
+}
+footer h4 {
+    margin: 0px;
+}
+
+small {
+    text-align: left;
+    
+}
+
+@media (min-width:460px) {
+
+    .descripciones {
+        display: initial;
+    }
+
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main section article {
+        flex-basis: 49%;
+    }
+
+    main h3 {
+        text-align: left;
+    }
+
+    .descuentos {
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width:768px) {
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+        
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    }
+
+    .buscador {
+        width:25%;
+    }
+    input {
+        width: 85%;
+        height: 75%;
+    }
+    button {
+        width: 15%;
+        height: 75%
+    }
+
+    .left-navbar,
+    .right-navbar {
+        display: flex;
+        gap:10px;
+        margin-top: 5px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    main section article {
+        flex-basis: 24%;
+    }
+    .precio-descuento {
+        justify-content: space-between;
+    }
+    .descuentos {
+        text-align: right;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 20px;
+        padding: 10px;
+        
+    }
+
+}
+
+@media (min-width:1200px) {
+    .main-header-top-bar, nav {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .descuentos {
+        text-align: left;
+    }
+
+    .buscador {
+        width:33%;
+    }
+    input {
+        width: 90%;
+        height: 75%;
+    }
+    button {
+        width: 10%;
+        height: 75%
+    }
+}
