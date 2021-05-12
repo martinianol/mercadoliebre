@@ -17,51 +17,95 @@
 
 </header>
 <main>
+  <section class = registrar-usuario>
+
     <form action="/" method ="GET">
 
-      <div>
-        <label for ="name">Nombre y Apellido:</label>
-        <input type="text" name="name" id ="name">
+      <div class="input-container">
+        <input type="text" name="name" id ="name" placeholder="Nombre y Apellido">
       </div>
         
-      <div>
-        <label for ="user">Nombre de Usuario:</label>
-        <input type="text" name="user" id ="user" minlength="6">
+      <div class ="input-container">
+        <input type="text" name="user" id ="user" minlength="6" placeholder="Nombre de Usuario">
       </div>
       
 
-
-        <label for ="date">Fecha de nacimiento: </label>
+      <div class ="input-container">
+        <label for ="date">Fecha de nacimiento</label>
         <input type="date" name="date" id="date">
+      </div>
+        
+      <div class ="input-container">
+        <input type="text" name="address" id="address" placeholder="Domicilio">
+      </div>
 
-        <label for ="address">Domicilio: </label>
-        <input type="text" name="address" id="address">
-
-        <label for ="profile">Perfil del usuario: </label>
-        <input type="radio" name="profile" value ="buy">Comprador
-        <input type="radio" name="profile" value ="sell">Vendedor
-
-        <label for="categories">Categoría de interés</label>
-        <input type="checkbox" name="categories" value="electro">Electro
-        <input type="checkbox" name="categories" value="moda">Moda
-        <input type="checkbox" name="categories" value="hogar">Hogar
-        <input type="checkbox" name="categories" value="toys">Juguetería
-        <input type="checkbox" name="categories" value="healthlife">Vida sana
-
+      <div class ="input-container">
+        <p>Perfil del usuario:</p>
+        <div class ="radio-options-container">
+          <div class="radio-options">
+            <input type="radio" name="profile" value ="buy">
+            <label for ="profile" class="label-inline">Comprador</label>
+          </div>
+          
+          <div class="radio-options">
+            <input type="radio" name="profile" value ="sell">
+            <label for ="profile" class="label-inline">Vendedor</label> 
+          </div>
+          
+        </div>
+      </div>
+        
+      <div class ="input-container">
+        <p>Categoría de interés</p>
+        <div class ="checkbox-options-container">
+          <div class ="checkbox-options">
+            <input type="checkbox" name="categories" value="electro">
+            <label class="label-inline">Electro</label>
+          </div>
+          <div class ="checkbox-options">
+            <input type="checkbox" name="categories" value="moda">
+            <label class="label-inline">Moda</label> 
+          </div>
+          <div class ="checkbox-options">
+            <input type="checkbox" name="categories" value="hogar">
+            <label class="label-inline">Hogar</label> 
+          </div>
+          <div class ="checkbox-options">
+            <input type="checkbox" name="categories" value="toys">
+            <label class="label-inline">Juguetería</label> 
+          </div>
+          <div class ="checkbox-options">
+            <input type="checkbox" name="categories" value="healthlife">
+            <label class="label-inline">Vida sana</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class ="input-container">
         <label for="photo">Foto de usuario</label>
         <input type="file" name="photo">
+      </div>
 
+      <div class ="input-container">
         <label for="pwd">Password:</label>
         <input type="password" name="pwd" id="pwd">
+      </div>
 
+      <div class ="input-container">
         <label for="cpwd">Confrimar password:</label>
         <input type="password" name="cpwd" id="cpwd">
+      </div>
+      
 
+      <div class ="input-container-button">
         <button type="submit" value="submit">Enviar</button>
         <button type="reset">Borrar</button>
+      </div>
+      
         
 
 
     </form>
+  </section> 
 </main>
 </html>
