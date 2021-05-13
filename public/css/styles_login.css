@@ -1,0 +1,35 @@
+.logear-usuario {
+    margin: 25px auto;
+}
+.logear-usuario button {
+    width: 100%;
+    color: #fff;
+    background-color: #1259c3;
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+
+@media (min-width: 460px) {
+    main section {
+    display: block;
+    }
+    .logear-usuario {
+        width: 80%;
+        }
+}
+
+@media (min-width: 768px) {
+    .logear-usuario {
+        width: 66.6%;
+        margin: 25px 
+        auto;
+    }
+
+    footer {
+        display: block;
+        width: 100%;
+    }
+}
