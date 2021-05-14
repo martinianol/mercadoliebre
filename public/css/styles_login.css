@@ -9,6 +9,11 @@
     box-shadow: none;
     border-radius: 8px;
     padding: 10px 20px;
+    transition: all 0.5s;
+}
+
+.logear-usuario button:hover {
+    background-color: #39b54a;
 }
 
 
@@ -28,8 +33,5 @@
         auto;
     }
 
-    footer {
-        display: block;
-        width: 100%;
-    }
+   
 }
