@@ -35,15 +35,13 @@ nav ul {
     margin:0;
 }
 
-#logo_search {
-    padding: 20px 0 0 10px;
-}
-
 
 input {
     display: block;
     margin: 5px 0px;
     width: 180px;
+    background-color: white;
+    border: none;
 }
 
 #search {
@@ -54,6 +52,7 @@ input {
     display: flex;
     align-items: center;
     font-size: 14px;
+
 }
 button {
     width: 18px;
@@ -61,13 +60,15 @@ button {
     text-align: center;
     padding-left: 0px;
     padding-right: 0px;
+    background-color: white;
+    border: none;
 }
 
 nav a {
     text-decoration: none;
     color: #222222;
     display: inline-block;
-    font-size: 17px;
+    font-size: 14px;
     padding: 5px 0;
 }
 
@@ -249,7 +250,8 @@ small {
     }
 
     .buscador {
-        width:25%;
+        flex-grow: 1.25;
+        max-width: 40%;
     }
     input {
         width: 85%;
@@ -293,7 +295,10 @@ small {
 }
 
 @media (min-width:1200px) {
-    .main-header-top-bar, nav {
+    .main-header-top-bar, 
+    nav, 
+    main, 
+    footer {
         max-width: 1200px;
         margin: auto;
     }
@@ -302,9 +307,6 @@ small {
         text-align: left;
     }
 
-    .buscador {
-        width:33%;
-    }
     input {
         width: 90%;
         height: 75%;
