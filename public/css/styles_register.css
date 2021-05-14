@@ -98,8 +98,30 @@ main {
 header {
     position: sticky;
     top:0px;
+    z-index: 100;
 
 }
+
+.product {
+    margin: 15px auto;
+    position: relative;
+    padding: 15px;
+    background-color: white;
+}
+.product img {
+    width:100%;
+}
+
+.product h2 {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 24px;
+    width: 33%;
+    background-color: rgba(0,0,0,0.5);
+    color: rgb(255, 255, 255);
+}
+
 
 
 
