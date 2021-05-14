@@ -25,7 +25,7 @@ nav ul {
 }
 
 
-input {
+.buscador input {
     display: block;
     margin: 5px 0px;
     width: 180px;
@@ -97,7 +97,7 @@ nav a {
         flex-grow: 1.25;
         max-width: 40%;
     }
-    input {
+    .buscador input {
         width: 85%;
         height: 75%;
     }
@@ -125,7 +125,7 @@ nav a {
         margin: auto;
     }
 
-    input {
+    .buscador input {
         width: 90%;
         height: 75%;
     }
