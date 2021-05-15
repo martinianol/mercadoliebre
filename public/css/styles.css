@@ -1,6 +1,4 @@
 
-
-
 .banner img {
     max-width: 100%;
     
@@ -17,7 +15,8 @@ h3 {
     margin-top: 20px;
 }
 
-.precios, .descripciones {
+.precios, 
+.descripciones {
     font-size: 18px;
 }
 
@@ -48,10 +47,10 @@ section {
 article {
     margin-top: 10px;
     text-align: center;
-    background-color: #FFF;
+    background-color: #FFF;      
 }
 
-.product_info i {
+.product-info i {
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -65,14 +64,14 @@ article {
     top: -15px;
 }
 
-.product_info {
+.product-info {
     position: relative;
 }
 img {
     width: 100%;
 }
 
-.product_info {
+.product-info {
     color: green;
     border-top: 1px solid #ebebeb;
     padding: 15px;
@@ -83,21 +82,40 @@ img {
 .precios {
     color:#000;
 }
+
 .descripciones {
     color: grey;
-    display: none;
+    opacity: 0;
 }
 
+.product-info i {
+    transition: all 1s;
+}
+.product-info i:hover{
+    transform: rotate(-90deg)
+}
 
 
 @media (min-width:460px) {
 
     .descripciones {
-        display: initial;
+        transition: all 1s;
+        
     }
 
     article {
+        transition: all 0.5s;
+        
+    }
+
+    article:hover .descripciones{
+        opacity: 1;
+          
+    }
+
+    article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
     }
 
     main section {

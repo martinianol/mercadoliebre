@@ -1,10 +1,11 @@
 footer {
     text-align: center;
     color: #666;
-    padding: 0px 20% 10px 20%;
+    padding: 0px 20% 20px 20%;
     background-color: white;
     width: 90%;
     margin: 10px auto;
+    position: relative
     
 }
 
@@ -21,9 +22,19 @@ footer h4 {
     margin: 0px;
 }
 
-small {
+footer small {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     text-align: left;
     
+}
+
+footer i {
+    transition: all 0.5s;
+}
+footer i:hover {
+    color: #39b54a
 }
 
 @media (min-width:768px) {
