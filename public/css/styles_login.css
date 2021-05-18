@@ -16,6 +16,11 @@
     background-color: #0022AA;
 }
 
+footer {
+    position:absolute;
+    bottom: 0;
+}
+
 
 @media (min-width: 460px) {
     main section {
@@ -32,6 +37,8 @@
         margin: 25px 
         auto;
     }
+
+   
 
    
 }
