@@ -14,172 +14,168 @@
     <link href = "/css/styles_register.css" rel = "stylesheet">
 </head>
 <body>
-    
-</body>
-<header>
-  <div class = "main-header-top-bar">
-    <a href="/"><img id = "logo" src='/images/logo-mercado-liebre.svg'  alt='logo'></a>
-    <div class = "buscador">
-      <input type="text" placeholder="  Buscar productos, marcas...">
-      <button><i id = "search" class="fas fa-search"></i></button>
+  <header>
+    <div class = "main-header-top-bar">
+      <a href="/"><img id = "logo" src='/images/logo-mercado-liebre.svg'  alt='logo'></a>
+      <div class = "buscador">
+        <input type="text" placeholder="  Buscar productos, marcas...">
+        <button><i id = "search" class="fas fa-search"></i></button>
+      </div>
+      <h2 class ="copy-header"><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de credito</h2>
     </div>
-    
-    <h2 class ="copy-header"><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de credito</h2>
-  </div>
 
-  <nav>
-    <ul class = "left-navbar">
-      <li><a href="#">Ofertas</a></li>
-      <li><a href="#">Tiendas Oficiales</a></li>
-      <li><a href="#">Vender</a></li>
-      <li><a href="#">Ayuda</a></li>
-    </ul>
+    <nav>
+      <ul class = "left-navbar">
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Tiendas Oficiales</a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
 
-    <ul class ="right-navbar">  
-      <li><a href="/registro">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
-      <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-      <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-    </ul>
-  </nav>
+      <ul class ="right-navbar">  
+        <li><a href="/registro">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
+        <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+        <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+      </ul>
+    </nav>
 
-  <div class="burger-menu">
-    <i class="fas fa-bars"></i>
-  </div>
-</header>
-<main>
-  <section class = "registrar-usuario">
-
-    <form action="/" method ="GET">
-
-      <div class="input-container">
-        <input type="text" name="name" id ="name" placeholder="Nombre y Apellido">
-      </div>
-        
-      <div class ="input-container">
-        <input type="text" name="user" id ="user"  placeholder="Nombre de Usuario" minlength="6">
-      </div>
-      
-
-      <div class ="input-container">
-        <label for ="date">Fecha de nacimiento</label>
-        <input type="date" name="date" id="date" max="2022-01-01">
-      </div>
-        
-      <div class ="input-container">
-        <input type="text" name="address" id="address" placeholder="Domicilio">
-      </div>
-
-      <div class ="input-container">
-        <p>Perfil del usuario:</p>
-        <div class ="radio-options-container">
-          <div class="radio-options">
-            <input type="radio" name="profile" value ="buy">
-            <label for ="profile" class="label-inline">Comprador</label>
-          </div>
-          
-          <div class="radio-options">
-            <input type="radio" name="profile" value ="sell">
-            <label for ="profile" class="label-inline">Vendedor</label> 
-          </div>
-          
+    <div class="burger-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+  
+  <main>
+    <section class = "registrar-usuario">
+      <form action="/" method ="GET">
+        <div class="input-container">
+          <input type="text" name="name" id ="name" placeholder="Nombre y Apellido">
         </div>
-      </div>
         
-      <div class ="input-container">
-        <p>Categoría de interés</p>
-        <div class ="checkbox-options-container">
-          <div class ="checkbox-options">
-            <input type="checkbox" name="categories" value="electro">
-            <label class="label-inline">Electro</label>
-          </div>
-          <div class ="checkbox-options">
-            <input type="checkbox" name="categories" value="moda">
-            <label class="label-inline">Moda</label> 
-          </div>
-          <div class ="checkbox-options">
-            <input type="checkbox" name="categories" value="hogar">
-            <label class="label-inline">Hogar</label> 
-          </div>
-          <div class ="checkbox-options">
-            <input type="checkbox" name="categories" value="toys">
-            <label class="label-inline">Juguetería</label> 
-          </div>
-          <div class ="checkbox-options">
-            <input type="checkbox" name="categories" value="healthlife">
-            <label class="label-inline">Vida sana</label>
+        <div class ="input-container">
+          <input type="text" name="user" id ="user"  placeholder="Nombre de Usuario" minlength="6">
+        </div>
+
+        <div class ="input-container">
+          <label for ="date">Fecha de nacimiento</label>
+          <input type="date" name="date" id="date" max="2022-01-01">
+        </div>
+        
+        <div class ="input-container">
+          <input type="text" name="address" id="address" placeholder="Domicilio">
+        </div>
+
+        <div class ="input-container">
+          <p>Perfil del usuario:</p>
+          <div class ="radio-options-container">
+            <div class="radio-options">
+              <input type="radio" name="profile" value ="buy">
+              <label for ="profile" class="label-inline">Comprador</label>
+            </div>
+          
+            <div class="radio-options">
+              <input type="radio" name="profile" value ="sell">
+              <label for ="profile" class="label-inline">Vendedor</label> 
+            </div>
           </div>
         </div>
-      </div>
+        
+        <div class ="input-container">
+          <p>Categoría de interés</p>
+          <div class ="checkbox-options-container">
+            <div class ="checkbox-options">
+              <input type="checkbox" name="categories" value="electro">
+              <label class="label-inline">Electro</label>
+            </div>
+
+            <div class ="checkbox-options">
+              <input type="checkbox" name="categories" value="moda">
+              <label class="label-inline">Moda</label> 
+            </div>
+
+            <div class ="checkbox-options">
+              <input type="checkbox" name="categories" value="hogar">
+              <label class="label-inline">Hogar</label> 
+            </div>
+
+            <div class ="checkbox-options">
+              <input type="checkbox" name="categories" value="toys">
+              <label class="label-inline">Juguetería</label> 
+            </div>
+
+            <div class ="checkbox-options">
+              <input type="checkbox" name="categories" value="healthlife">
+              <label class="label-inline">Vida sana</label>
+            </div>
+          </div>
+        </div>
       
-      <div class ="input-container">
-        <label for="photo">Foto de usuario</label>
-        <input type="file" name="photo">
-      </div>
+        <div class ="input-container">
+          <label for="photo">Foto de usuario</label>
+          <input type="file" name="photo">
+        </div>
 
-      <div class ="input-container">
-        <label for="pwd">Password:</label>
-        <input type="password" name="pwd" id="pwd">
-      </div>
+        <div class ="input-container">
+          <label for="pwd">Password:</label>
+          <input type="password" name="pwd" id="pwd">
+        </div>
 
-      <div class ="input-container">
-        <label for="cpwd">Confrimar password:</label>
-        <input type="password" name="cpwd" id="cpwd">
-      </div>
-      
+        <div class ="input-container">
+          <label for="cpwd">Confrimar password:</label>
+          <input type="password" name="cpwd" id="cpwd">
+        </div>
 
-      <div class ="input-container-button">
-        <button type="submit" value="submit">Enviar</button>
-        <button type="reset">Borrar</button>
-      </div>
-      
-       
+        <div class ="input-container-button">
+          <button type="submit" value="submit">Enviar</button>
+          <button type="reset">Borrar</button>
+        </div>
+      </form>
+    </section> 
 
-
-    </form>
-
-  </section> 
-  <section class="product-container">
-    <article class="product">
-      <img src="images/img-samsung-galaxy-s10.jpg" alt="celular">
-      <h2>Galaxy S10</h2>
-    </article>
+    <section class="product-container">
+      <article class="product">
+        <img src="images/img-samsung-galaxy-s10.jpg" alt="celular">
+        <h2>Galaxy S10</h2>
+      </article>
   
-    <article class="product">
-      <img src="images/img-samsung-galaxy-s10.jpg" alt="celular">
-      <h2>Galaxy S10</h2>
-    </article>
+      <article class="product">
+        <img src="images/img-samsung-galaxy-s10.jpg" alt="celular">
+        <h2>Galaxy S10</h2>
+      </article>
   
-    <article class="product">
-      <img src="images/img-samsung-galaxy-s10.jpg" alt="celular">
-      <h2>Galaxy S10</h2>
-    </article>
-  </section>
-  
+      <article class="product">
+        <img src="images/img-samsung-galaxy-s10.jpg" alt="celular">
+        <h2>Galaxy S10</h2>
+      </article>
+    </section>
+  </main>
 
-</main>
+  <footer>
+    <div class="footer-section-container">
+      <section>
+        <i class="fas fa-credit-card"></i>
+        <h4>Pagá con tarjeta o en efectivo</h4>
+        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+      </section>
 
-<footer>
-  <section>
-    <i class="fas fa-credit-card"></i>
-    <h4>Pagá con tarjeta o en efectivo</h4>
-    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-  </section>
+      <section>
+        <i class="fas fa-gift"></i>
+        <h4>Envío gratis desde $ 2.500</h4>
+        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+          productos. Es un beneficio de Mercado Puntos.
+        </p>
+      </section>
 
-  <section>
-    <i class="fas fa-gift"></i>
-    <h4>Envío gratis desde $ 2.500</h4>
-    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-      productos. Es un beneficio de Mercado Puntos.</p>
-  </section>
+      <section>
+        <i class="fas fa-user-shield"></i>
+        <h4>Seguridad, de principio a fin</h4>
+        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
+        </p>
+      </section>
+      <small>Copyright © 1999-2020 MercadoLiebre S.R.L.</small>
+    </div>
+  </footer>  
+</body>
 
-  <section>
-    <i class="fas fa-user-shield"></i>
-    <h4>Seguridad, de principio a fin</h4>
-    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-      porque estás siempre protegid@.</p>
-  </section>
-  <small>Copyright © 1999-2020 MercadoLiebre S.R.L.</small>
-</footer>
 
 
 </html>
