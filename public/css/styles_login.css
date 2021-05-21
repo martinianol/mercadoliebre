@@ -17,6 +17,27 @@
 }
 
 
+
+
+
+.product h2 {
+    position: absolute;
+    left:0;
+    top:0;
+    padding: 5px 10px;
+    font-size: 24px;
+    width: 100%;
+    background-color:rgba(102,102,102,0.7);
+    color: #ebebeb;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s;
+}
+
+
 @media (min-width: 460px) {
     main section {
     display: block;

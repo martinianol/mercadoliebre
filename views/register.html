@@ -17,10 +17,10 @@
   <header>
     <div class = "main-header-top-bar">
       <a href="/"><img id = "logo" src='/images/logo-mercado-liebre.svg'  alt='logo'></a>
-      <div class = "buscador">
+      <form action ="/buscar" method ="GET" class = "buscador">
         <input type="text" placeholder="  Buscar productos, marcas...">
         <button><i id = "search" class="fas fa-search"></i></button>
-      </div>
+      </form>   
       <h2 class ="copy-header"><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de credito</h2>
     </div>
 
@@ -52,7 +52,7 @@
         </div>
         
         <div class ="input-container">
-          <input type="text" name="user" id ="user"  placeholder="Nombre de Usuario" minlength="6">
+          <input type="text" name="user" id ="user"  placeholder="Nombre de Usuario" minlength="6" required>
         </div>
 
         <div class ="input-container">
@@ -61,7 +61,7 @@
         </div>
         
         <div class ="input-container">
-          <input type="text" name="address" id="address" placeholder="Domicilio">
+          <input type="text" name="address" id="address" placeholder="Domicilio" required>
         </div>
 
         <div class ="input-container">
@@ -116,12 +116,12 @@
 
         <div class ="input-container">
           <label for="pwd">Password:</label>
-          <input type="password" name="pwd" id="pwd">
+          <input type="password" name="pwd" id="pwd" required>
         </div>
 
         <div class ="input-container">
           <label for="cpwd">Confrimar password:</label>
-          <input type="password" name="cpwd" id="cpwd">
+          <input type="password" name="cpwd" id="cpwd" required>
         </div>
 
         <div class ="input-container-button">
