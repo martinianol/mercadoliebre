@@ -86,6 +86,7 @@ img {
 .descripciones {
     color: grey;
     opacity: 0;
+    display: none;
 }
 
 .product-info i {
@@ -100,6 +101,7 @@ img {
 
     .descripciones {
         transition: all 1s;
+        transition: display 1s;
         
     }
 
@@ -110,6 +112,7 @@ img {
 
     article:hover .descripciones{
         opacity: 1;
+        display: initial;
           
     }
 
