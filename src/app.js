@@ -19,7 +19,5 @@ app.set('view engine', 'ejs');
 
 //Determino las rutas de las distintas direcciones a que controlador deben llamar
 app.use('/', mainRoutes);
-app.use('/registro', mainRoutes);
-app.use('/login', mainRoutes);
 
 
