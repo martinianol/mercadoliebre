@@ -15,10 +15,11 @@ h3 {
     margin-top: 20px;
 }
 
-.precios, 
-.descripciones {
+.precios{
     font-size: 18px;
 }
+
+
 
 .precio-descuento {
     display: flex;
@@ -86,7 +87,8 @@ img {
 .descripciones {
     color: grey;
     opacity: 0;
-    display: none;
+    font-size: 1px;
+    
 }
 
 .product-info i {
@@ -101,8 +103,7 @@ img {
 
     .descripciones {
         transition: all 1s;
-        transition: display 1s;
-        
+           
     }
 
     article {
@@ -112,7 +113,7 @@ img {
 
     article:hover .descripciones{
         opacity: 1;
-        display: initial;
+        font-size: 18px;
           
     }
 
