@@ -12,6 +12,9 @@ app.use(express.static(publicPath));
 
 app.listen(port, () => console.log ('Server up and running on port 3000'));
 
+app.set('view engine', 'ejs');
+//app.set('vews','./views');
+
 app.use('/', mainRoutes);
 app.use('/registro', mainRoutes);
 app.use('/login', mainRoutes);

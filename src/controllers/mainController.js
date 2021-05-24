@@ -2,14 +2,15 @@ const path = require('path')
 const viewsPath = path.resolve(__dirname, '../views/');
 
 const controlador = {
-    index: (req,res) => {
-        res.sendFile(path.resolve(viewsPath, 'home.html'));
+    home: (req,res) => {
+        res.render(path.resolve(viewsPath, 'home.ejs'));
+        
     }, //pagina principal
     login: (req,res) => {
-        res.sendFile(path.resolve(viewsPath, 'login.html'));
+        res.render(path.resolve(viewsPath, 'login.ejs'));
     }, //pagina login
     register: (req,res) => {
-        res.sendFile(path.resolve(viewsPath, 'register.html'));
+        res.render(path.resolve(viewsPath, 'register.ejs'));
     } //pagina registro
 };
 
