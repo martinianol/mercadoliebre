@@ -7,6 +7,7 @@ const publicPath = path.resolve(__dirname, '../public');
 // Requiero el modulo con las rutas
 const mainRoutes = require('./routes/main');
 const usersRoutes = require('./routes/usersRoutes');
+const productRoutes = require('./routes/productRoutes');
 
 //Determino la carpeta de los archivos publicos para que puedan ser utilizados por Express
 app.use(express.static(publicPath));
@@ -19,3 +20,4 @@ app.set('view engine', 'ejs');
 //Determino las rutas de las distintas direcciones a que controlador deben llamar
 app.use('/', mainRoutes);
 app.use('/users', usersRoutes);
+app.use('/products', productRoutes);

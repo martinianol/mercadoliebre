@@ -1,169 +1,155 @@
-
 .banner img {
-    max-width: 100%;
-    
+  max-width: 100%;
 }
 
 main {
-    text-align: center;
-    width: 90%;
-    margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 h3 {
-    font-size: 24px;
-    margin-top: 20px;
-}
-
-.precios{
-    font-size: 18px;
-}
-
-
-
-.precio-descuento {
-    display: flex;
-    align-items: baseline;
-    gap:10px;
-    
+  font-size: 24px;
+  margin-top: 20px;
 }
 
 .precios {
-    width: 30%;
+  font-size: 18px;
+}
+
+.precio-descuento {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.precios {
+  width: 30%;
 }
 
 .descuentos {
-    flex-grow: 1;
-   
+  flex-grow: 1;
 }
 
-header h4{
-    text-align: center;
+header h4 {
+  text-align: center;
 }
 
 section {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
+section a {
+  text-decoration: none;
+}
 article {
-    margin-top: 10px;
-    text-align: center;
-    background-color: #FFF;      
+  margin-top: 10px;
+  text-align: center;
+  background-color: #fff;
 }
 
 .product-info i {
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
 }
 
 .product-info {
-    position: relative;
+  position: relative;
 }
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .product-info {
-    color: green;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-    text-align: left;
-    background-color: white;
+  color: green;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  text-align: left;
+  background-color: white;
 }
 
 .precios {
-    color:#000;
+  color: #000;
 }
 
 .descripciones {
-    color: grey;
-    opacity: 0;
-    font-size: 1px;
-    
+  color: grey;
+  opacity: 0;
+  font-size: 1px;
 }
 
 .product-info i {
+  transition: all 1s;
+}
+.product-info i:hover {
+  transform: rotate(-90deg);
+}
+
+@media (min-width: 460px) {
+  .descripciones {
     transition: all 1s;
-}
-.product-info i:hover{
-    transform: rotate(-90deg)
-}
+  }
 
+  article {
+    transition: all 0.5s;
+  }
 
-@media (min-width:460px) {
+  article:hover .descripciones {
+    opacity: 1;
+    font-size: 18px;
+  }
 
-    .descripciones {
-        transition: all 1s;
-           
-    }
+  article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
 
-    article {
-        transition: all 0.5s;
-        
-    }
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-    article:hover .descripciones{
-        opacity: 1;
-        font-size: 18px;
-          
-    }
+  main section article {
+    flex-basis: 49%;
+  }
 
-    article:hover {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        
-    }
+  main h3 {
+    text-align: left;
+  }
 
-    main section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    main section article {
-        flex-basis: 49%;
-    }
-
-    main h3 {
-        text-align: left;
-    }
-
-    .descuentos {
-        text-align: center;
-    }
-
-
+  .descuentos {
+    text-align: center;
+  }
 }
 
-@media (min-width:768px) {
-    main section article {
-        flex-basis: 24%;
-    }
-    .precio-descuento {
-        justify-content: space-between;
-    }
-    .descuentos {
-        text-align: right;
-    }
-
+@media (min-width: 768px) {
+  main section article {
+    flex-basis: 24%;
+  }
+  .precio-descuento {
+    justify-content: space-between;
+  }
+  .descuentos {
+    text-align: right;
+  }
 }
 
-@media (min-width:1200px) {
-    main {
-        max-width: 1200px;
-        margin: auto;
-    }
+@media (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
 
-    .descuentos {
-        text-align: left;
-    }
-
+  .descuentos {
+    text-align: left;
+  }
 }

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <%- include ('../partials/head') %>
+    <%- include ('./partials/head') %>
     <link href="/css/styles.css" rel="stylesheet" />
   </head>
 
   <body>
     <!--Header-->
-    <%- include ('../partials/header') %>
+    <%- include ('./partials/header') %>
 
     <div class="banner">
       <img src="/images/img-home-banner.jpg" alt="banner" />
@@ -17,15 +17,17 @@
       <h3>Sección: Basado en tu última visita</h3>
       <section>
         <article>
-          <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera" />
-          <div class="product-info">
-            <i class="fas fa-truck"></i>
-            <div class="precio-descuento">
-              <p class="precios">$6.770</p>
-              <p class="descuentos">40% OFF</p>
-            </div>
-            <p class="descripciones">Cafetera Moulinex</p>
-          </div>
+          <a href="/products/detail/1">
+            <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera" />
+            <div class="product-info">
+              <i class="fas fa-truck"></i>
+              <div class="precio-descuento">
+                <p class="precios">$6.770</p>
+                <p class="descuentos">40% OFF</p>
+              </div>
+              <p class="descripciones">Cafetera Moulinex</p>
+            </div></a
+          >
         </article>
 
         <article>
@@ -118,6 +120,6 @@
     </main>
 
     <!--Footer-->
-    <%- include ('../partials/footer') %>
+    <%- include ('./partials/footer') %>
   </body>
 </html>
