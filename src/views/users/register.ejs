@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <%- include ('../partials/head') %>
+    <%- include ('../../partials/head') %>
     <link href="/css/styles_register.css" rel="stylesheet" />
   </head>
   <body>
     <!--Header-->
-    <%- include ('../partials/header') %>
+    <%- include ('../../partials/header') %>
 
     <main>
       <section class="registrar-usuario">
@@ -113,25 +113,11 @@
         </form>
       </section>
 
-      <section class="product-container">
-        <article class="product">
-          <img src="images/img-samsung-galaxy-s10.jpg" alt="celular" />
-          <h2>Galaxy S10</h2>
-        </article>
-
-        <article class="product">
-          <img src="images/img-samsung-galaxy-s10.jpg" alt="celular" />
-          <h2>Galaxy S10</h2>
-        </article>
-
-        <article class="product">
-          <img src="images/img-samsung-galaxy-s10.jpg" alt="celular" />
-          <h2>Galaxy S10</h2>
-        </article>
-      </section>
+      <!--Product Promotion-->
+      <%- include ('../products/productsPromotion') %>
     </main>
 
     <!--Footer-->
-    <%- include ('../partials/footer') %>
+    <%- include ('../../partials/footer') %>
   </body>
 </html>
